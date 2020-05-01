@@ -1,3 +1,9 @@
+# Local
+signpdf_config.py
+.gitignore
+pylama.ini
+*.pdf
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
