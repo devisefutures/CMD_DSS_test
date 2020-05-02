@@ -52,11 +52,13 @@ pip3 (caso ainda não estejam instalados):
     - hashlib  
     - datetime
     - pem
+    - requests
     - base64
     - json
     - re
     - os
     - logging 
+    - zeep
 
 3. A aplicação foi testada com Python 3.7.4
 
