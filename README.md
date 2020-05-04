@@ -60,11 +60,15 @@ pip3 (caso ainda não estejam instalados):
     - logging 
     - zeep
 
-3. A aplicação foi testada com Python 3.7.4
+    Note que é provável que todos estejam instalados por omissão, à excepção das packages pem e zeep.
+
+3. A aplicação foi testada com Python 3.7.4 e Python 3.6.9
 
 4. Antes de utilizar, renomeie o ficheiro \_signpdf_config.py para signpdf_config.py
 e introduza o APPLICATION_ID da sua entidade (atribuído pela AMA), assim como altere o servidor DSS REST no caso de estar a utilizar um servidor diferente daquele que está indicado.
 
-5. A aplicação está a contactar com um servidor WebApp DSS, instalado em <https://dss.devisefutures.com/,> sendo enviado o ficheiro PDF para esse servidor. Por uma questão de confidencialidade dos seus dados, deverá instalar o servidor WebApp DSS no seu próprio servidor (pode obter o DSS _bundle_ em <https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/DSS)> e alterar o URL do DSS_REST no ficheiro signpdf_config.py.
+5. A aplicação está a contactar com um servidor WebApp DSS, instalado em <https://dss.devisefutures.com/>, sendo enviado o ficheiro PDF para esse servidor. Por uma questão de confidencialidade dos seus dados, deverá instalar o servidor WebApp DSS no seu próprio servidor (pode obter o DSS _bundle_ em <https://ec.europa.eu/cefdigital/wiki/display/CEFDIGITAL/DSS)> e alterar o URL do DSS_REST no ficheiro signpdf_config.py.
 
-6. Licença: GNU GENERAL PUBLIC LICENSE Version 3
+6. A comunicação com o servidor CMD é direta, sem intermediação do servidor WebApp DSS. Ou seja, o _user_ e o _pin_ são comunicados diretamente do seu computador com o servidor CMD.
+
+7. Licença: GNU GENERAL PUBLIC LICENSE Version 3
